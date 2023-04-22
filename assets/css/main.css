@@ -1,0 +1,19 @@
+input {
+  display: none;
+}
+
+section > div {
+  display: none;
+}
+
+#radio-section-0:checked ~ #section-0 > div {
+  display: block;
+}
+
+#radio-section-1:checked ~ #section-1 > div {
+  display: block;
+}
+
+#radio-section-2:checked ~ #section-2 > div {
+  display: block;
+}
