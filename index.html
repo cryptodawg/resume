@@ -1,35 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Nick Evans :. Resume</title></head>
+        <title>Nick Evans :. Resume</title>
+	    <meta name="keywords" content="Nick Evans,resume,curriculum vitae,cv" />
+	    <meta name="description" content="Nick Evans's Interactive Resume" />
+	    <!-- OpenGraph -->
+	    <meta property="og:title" content="Resume of Nick Evans" />
+	    <meta property="og:type" content="document" />
+	    <meta property="og:url" content="[link to your site]" />
+	    <meta property="og:image" content="[link to your picture]" />
+	    <meta property="og:description" content="Nick Evans's Interactive Resume" />
+    </head>
+
     <body>
-    <link rel="stylesheet" href="assets/css/main.css">
-    <input type="radio" name="section" id="radio-section-0" checked/>
-    <input type="radio" name="section" id="radio-section-1"/>
-    <input type="radio" name="section" id="radio-section-2"/>
+	    <link rel="stylesheet" href="assets/css/main.css">
+	    <input type="radio" name="section" id="radio-section-intro" checked/>
+	    <input type="radio" name="section" id="radio-section-previous-exp"/>
+	    <input type="radio" name="section" id="radio-section-education"/>
 
-    <section id="section-0">
-        <h2><label for="radio-section-0">Introduction</label></h2>
-        <div>
-            Hi there! I'm a full-stack Software Engineer blah blah blah
+	    <section id="section-intro" itemscope itemtype="http://schema.org/Person">
+	        <h2><label for="radio-section-intro">Introduction</label></h2>
+	        <div>
+		        Hi, I'm <span itemprop="name">Nick Evans</span>! I'm a <span itemprop="jobTitle">full-stack Software Engineer</span> blah blah blah
 
-            Nick Evans
-            nick@nick-evans.me
-            206-605-6748
-        </div>
-    </section>
-    <section id="section-1">
-        <h2><label for="radio-section-1">Previous Experience</label></h2>
-        <div>
+	            <p><a itemprop="email">nick@nick-evans.me</a></p>
+	            <p itemprop="telephone">206-605-6748</p>
+	        </div>
+	    </section>
+	    <section id="section-previous-exp">
+	        <h2><label for="radio-section-previous-exp">Previous Experience</label></h2>
+		    <div>
+			    <ul>
+				    <li>
+					   <details>
+						   <summary>JPMorgan Chase, <time>June 2019 - Present</time></summary>
+						   <ul>
+								<li>
+									<details>
+										<summary>Lead Full-Stack Software Engineer, <time>January 2023 - Present</time></summary>
+									</details>
+								</li>
+							   <li>
+								   <details>
+									   <summary>Full-Stack Software Engineer, <time>June 2019 - January 2023</time></summary>
+								   </details>
+							   </li>
+						   </ul>
+					   </details>
+				    </li>
+				    <li>
+					    <details>
+						    <summary>AT&T, <time>June 2016 - June 2019</time></summary>
+						    <ul>
+							    <li>
+								    <details>
+									    <summary>Backend Software Developer, Network Analytics, <time>April 2018 - June 2019</time></summary>
+								    </details>
+							    </li>
+							    <li>
+								    <details>
+									    <summary>Network Engineer, <time>April 2018 - June 2019</time></summary>
+								    </details>
+							    </li>
+						    </ul>
+					    </details>
+				    </li>
+				    <li>
+					    <details>
+						    <summary>Center for Education Data and Research, <time>September 2015 - June 2016</time></summary>
+						    <ul>
+							    <li>
+								    <details>
+									    <summary>Statistical Researcher</summary>
+								    </details>
+							    </li>
+						    </ul>
+					    </details>
+				    </li>
+				    <li>
+					    <details>
+						    <summary>University of Washington, <time>March 2013 - June 2016</time></summary>
+						    <ul>
+							    <li>
+								    <details>
+									    <summary>Web Developer, <time>June 2014 - September 2014</time></summary>
+								    </details>
+							    </li>
+							    <li>
+								    <details>
+									    <summary>Student Assistant / Domain Administrator, <time>March 2013 - June 2016</time></summary>
+								    </details>
+							    </li>
+						    </ul>
+					    </details>
+				    </li>
+			    </ul>
+		    </div>
+	    </section>
+	    <section id="section-education">
+	        <h2><label for="radio-section-education">Education & Certifications</label></h2>
+	        <div>
 
-        </div>
-    </section>
-    <section id="section-2">
-        <h2><label for="radio-section-2">Side Projects</label></h2>
-        <div>
-            Content for the side projects.
-        </div>
-    </section>
+	        </div>
+	    </section>
     </body>
 
 </html>
