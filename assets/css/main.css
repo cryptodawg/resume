@@ -2,6 +2,16 @@ input {
   display: none;
 }
 
+h2 {
+  font-family: 'Libre Baskerville', serif;
+  align-content: center;
+}
+
+section {
+  padding: 20px;
+}
+
+
 section > div {
   display: none;
 }
@@ -18,30 +28,48 @@ section > div {
   display: block;
 }
 
+#radio-section-volunteering:checked ~ #section-volunteering > div {
+  display: block;
+}
+
 body {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 75vmin;
+  width: 90vmin;
   height: 80vmin;
   margin-left: auto;
   margin-right: auto;
+  background-color: #ebf2fa;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: large;
 }
 
 #section-intro {
-  background-color: #FDFFFC;
+  background-color: #ebf2fa;
+}
+
+#intro {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+#intro > img {
+  height: 300px;
+  border-radius: 10%;
 }
 
 #section-previous-exp {
-  background-color: #235789;
-  color: #FDFFFC;
+  background-color: #05668D;
+  color: #ebf2fa;
 }
 
 #section-education {
-  background-color: #C1292E;
+  background-color: #86A91B;
 }
 
 #section-volunteering {
-  background-color: #F1D302;
+  background-color: #F5D547;
 }
