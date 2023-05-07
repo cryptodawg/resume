@@ -15,9 +15,12 @@
 
 <body>
 	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/fa.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Libre+Franklin&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Libre+Franklin&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-HjWAIDDGlF9lYaDTm28KPO3vDwN4O+hE4GhGgxuJXgH+ZinY8pV9NHNLjRRY3U5n" crossorigin="anonymous">
 	<input type="radio" name="section" id="radio-section-intro" checked />
 	<input type="radio" name="section" id="radio-section-previous-exp" />
 	<input type="radio" name="section" id="radio-section-education" />
@@ -28,16 +31,19 @@
 		<div>
 			<div id="intro">
 				<div>
-					<p>Hi there! I'm <span itemprop="name">Nick Evans</span>, a <span itemprop="jobTitle">full-stack Software Engineer</span> in Seattle, WA.</p>
-					
+					<p>Hi there! I'm <span itemprop="name">Nick Evans</span>, a <span itemprop="jobTitle">full-stack
+							Software Engineer</span> in Seattle, WA.</p>
+
 					<p>
-						While I love technology and truly believe in its power to transform the world for the better, my true passion is for the outdoors. 
-						I don't want to build the next FAANG product. I want to use my skills to enable outdoor enthusiasts and researchers to do better work.
+						While I love technology and truly believe in its power to transform the world for the better, my
+						true passion is for the outdoors.
+						I don't want to build the next FAANG product. I want to use my skills to enable outdoor
+						enthusiasts and researchers to do better work.
 					</p>
-	
+
 					<p><a itemprop="email">nick@nick-evans.me</a></p>
 					<p itemprop="telephone">206-605-6748</p>
-	
+
 					<p>I'd rather be snowboarding.</p>
 				</div>
 				<img src="assets/img/colored_hair.jpg" alt="picture of Nick Evans">
@@ -47,74 +53,72 @@
 	<section id="section-previous-exp">
 		<h2><label for="radio-section-previous-exp">Experience</label></h2>
 		<div>
-			<ul>
-				<li>
-					<details>
-						<summary>JPMorgan Chase, <time>June 2019 - Present</time></summary>
-						<ul>
-							<li>
-								<details>
-									<summary>Lead Full-Stack Software Engineer, <time>January 2023 - Present</time>
-									</summary>
-								</details>
-							</li>
-							<li>
-								<details>
-									<summary>Full-Stack Software Engineer, <time>June 2019 - January 2023</time>
-									</summary>
-								</details>
-							</li>
-						</ul>
-					</details>
+			<ul class="carousel-viewport">
+				<li class="carousel-slide" id="carousel-slide-0">
+					<h3>JPMorgan Chase, <time>June 2019 - Present</time></h3>
+					<h4>Lead Full-Stack Software Engineer, <time>January 2023 - Present</h4>
+					<ul>
+						<li>Blah</li>
+					</ul>
+					<h4>Full-Stack Software Engineer, <time>June 2019 - January 2023</h4>
+					<ul>
+						<li>Blah</li>
+					</ul>
+					<div class="carousel-nav">
+						<a href="#carousel-slide-3" class="prev"> <i class="fas fa-chevron-left"></i> </a>
+						<a href="#carousel-slide-1" class="next"> <i class="fas fa-chevron-right"></i> </a>
+					</div>
 				</li>
-				<li>
-					<details>
-						<summary>AT&T, <time>June 2016 - June 2019</time></summary>
-						<ul>
-							<li>
-								<details>
-									<summary>Backend Software Developer, Network Analytics, <time>April 2018 - June
-											2019</time></summary>
-								</details>
-							</li>
-							<li>
-								<details>
-									<summary>Network Engineer, <time>April 2018 - June 2019</time></summary>
-								</details>
-							</li>
-						</ul>
-					</details>
+				<li class="carousel-slide" id="carousel-slide-1">
+					<h3>AT&T, <time>June 2016 - June 2019</time></h3>
+					<h4>Backend Software Developer, Network Analytics, <time>April 2018 - June 2019</time></h4>
+					<ul>
+						<li>
+							Blah
+						</li>
+					</ul>
+					<h4>Network Engineer, <time>April 2018 - June 2019</time></h4>
+					<ul>
+						<li>
+							Blah
+						</li>
+					</ul>
+					<div class="carousel-nav">
+						<a href="#carousel-slide-0" class="prev"> <i class="fas fa-chevron-left"></i> </a>
+						<a href="#carousel-slide-2" class="next"> <i class="fas fa-chevron-right"></i> </a>
+					</div>
 				</li>
-				<li>
-					<details>
-						<summary>Center for Education Data and Research, <time>September 2015 - June 2016</time>
-						</summary>
-						<ul>
-							<li>
-								<details>
-									<summary>Statistical Researcher</summary>
-								</details>
-							</li>
-						</ul>
-					</details>
+				<li class="carousel-slide" id="carousel-slide-2">
+					<h3>Center for Education Data and Research, <time>September 2015 - June 2016</time></h3>
+					<h4>Statistical Researcher</h4>
+					<ul>
+						<li>
+							Blah
+						</li>
+					</ul>
+					<div class="carousel-nav">
+						<a href="#carousel-slide-1" class="prev"> <i class="fas fa-chevron-left"></i> </a>
+						<a href="#carousel-slide-3" class="next"> <i class="fas fa-chevron-right"></i> </a>
+					</div>
 				</li>
-				<li>
-					<details>
-						<summary>University of Washington, <time>March 2013 - June 2016</time></summary>
-						<ul>
-							<li>
-								<details>
-									<summary>Web Developer, <time>June 2014 - September 2014</time></summary>
-								</details>
-							</li>
-							<li>
-								<details>
-									<summary>Student Assistant / Domain Administrator, <time>March 2013 - June
-											2016</time></summary>
-								</details>
-							</li>
-						</ul>
-					</details>
+				<li class="carousel-slide" id="carousel-slide-3">
+					<h3>University of Washington, <time>March 2013 - June 2016</time></h3>
+					<h4>Web Developer, <time>June 2014 - September 2014</time></h4>
+					<ul>
+						<li>
+							Blah
+						</li>
+					</ul>
+					<h4>Student Assistant / Domain Administrator, <time>March 2013 - June 2016</time></h4>
+					<ul>
+						<li>
+							Blah
+						</li>
+					</ul>
+					<div class="carousel-nav">
+						<a href="#carousel-slide-2" class="prev"> <i class="fas fa-chevron-left"></i> </a>
+						<a href="#carousel-slide-0" class="next"> Go to First Slide </a>
+					</div>
 				</li>
 			</ul>
 		</div>
@@ -124,15 +128,10 @@
 		<div>
 			<ul>
 				<li>
-					<details>
-						<summary>Bachelor of Science, Mathematics, University of Washington, <time>June 2016</time>
-						</summary>
-					</details>
+					<h4>Bachelor of Science, Mathematics, University of Washington, <time>June 2016</time></h4>
 				</li>
 				<li>
-					<details>
-						<summary>AWS Developer Associate, <time>November 2022</time></summary>
-					</details>
+					<h4>AWS Developer Associate, <time>November 2022</time></h4>
 				</li>
 			</ul>
 		</div>
@@ -142,9 +141,7 @@
 		<div>
 			<ul>
 				<li>
-					<details>
-						<summary>King County Search and Rescue, <time>March 2020 - Present</time></summary>
-					</details>
+					<h4>King County Search and Rescue, <time>March 2020 - Present</time></h4>
 				</li>
 			</ul>
 		</div>
