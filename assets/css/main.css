@@ -41,13 +41,13 @@ body {
   height: 80vmin;
   margin-left: auto;
   margin-right: auto;
-  background-color: #ebf2fa;
+  background-image: url('../img/topography.png');
   font-family: 'Libre Franklin', sans-serif;
   font-size: large;
 }
 
 #section-intro {
-  background-color: #ebf2fa;
+  background-color: #fff;
 }
 
 #intro {
@@ -59,6 +59,10 @@ body {
 #intro > img {
   height: 300px;
   border-radius: 10%;
+}
+
+#intro > div > p > i {
+  margin-right: 0.5rem;
 }
 
 #section-previous-exp {
