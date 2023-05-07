@@ -81,9 +81,11 @@ body {
 }
 
 .carousel-slide {
+  display: flex;
   flex-shrink: 0;
   scroll-snap-align: start;
   width: 100%;
+  justify-content: space-between;
 }
 
 #section-education {
@@ -94,32 +96,28 @@ body {
   background-color: #F5D547;
 }
 
-
-.carousel-nav {
-  display: flex;
-  margin-top: 10px;
-}
-
-.carousel-nav > .next {
+.carousel-slide > .next {
   color: #fff;
   font-size: 2rem;
   line-height: 4rem;
   text-align: right;
   border-radius: 50%;
   outline: 0;
-  width: 50%;
-  align-self: flex-end;
+  align-self: center;
 }
 
-.carousel-nav > .prev {
+.carousel-slide > div {
+  flex-basis: 90%;
+}
+
+.carousel-slide > .prev {
   color: #fff;
   font-size: 2rem;
   line-height: 4rem;
   text-align: left;
   border-radius: 50%;
   outline: 0;
-  width: 50%;
-  align-self: flex-start;
+  align-self: center;
 }
 
 
