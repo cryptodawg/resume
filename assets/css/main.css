@@ -43,7 +43,38 @@ body {
   margin-right: auto;
   background-image: url('../img/topography.png');
   font-family: 'Libre Franklin', sans-serif;
-  font-size: large;
+  font-size: larger;
+}
+
+@media only screen and (max-width: 1000px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    width: 100%;
+    position: unset;
+    top: unset;
+    left: unset;
+    transform: unset;
+    height: calc(100vh - 431.34px);
+  }
+
+  #radio-section-intro:checked ~ #section-intro {
+    height: 100%;
+  }
+  
+  #radio-section-previous-exp:checked ~ #section-previous-exp {
+    height: 100%;
+  }
+  
+  #radio-section-education:checked ~ #section-education {
+    height: 100%;
+  }
+  
+  #radio-section-volunteering:checked ~ #section-volunteering {
+    height: 100%;
+  }
 }
 
 #section-intro {
