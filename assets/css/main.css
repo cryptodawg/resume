@@ -96,14 +96,15 @@ body {
   background-color: #F5D547;
 }
 
-.carousel-slide > .next {
+.carousel-slide > .carousel-nav {
   color: #fff;
   font-size: 2rem;
-  line-height: 4rem;
-  text-align: right;
-  border-radius: 50%;
   outline: 0;
   align-self: center;
+}
+
+.carousel-slide > .next {
+  text-align: right;
 }
 
 .carousel-slide > div {
@@ -111,13 +112,7 @@ body {
 }
 
 .carousel-slide > .prev {
-  color: #fff;
-  font-size: 2rem;
-  line-height: 4rem;
   text-align: left;
-  border-radius: 50%;
-  outline: 0;
-  align-self: center;
 }
 
 
