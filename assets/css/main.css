@@ -8,10 +8,12 @@ input {
 
 h2 {
   font-family: 'Libre Baskerville', serif;
-  font-size: calc(18px + 1.5rem);
+  font-size: calc(18px + 1rem);
 }
 
 section {
+  display: flex;
+  flex-direction: column;
   padding: 2vh;
 }
 
@@ -19,75 +21,74 @@ section > div {
   display: none;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Libre Franklin', sans-serif;
+  overflow-y: auto;
+  margin: unset;
+  height: 100vh;
+  font-size: 1.25rem;
+}
+
+#radio-section-intro:checked ~ #section-intro {
+  flex-grow: 1;
+}
+
+#radio-section-skills:checked ~ #section-skills {
+  flex-grow: 1;
+}
+
+#radio-section-previous-exp:checked ~ #section-previous-exp {
+  flex-grow: 1;
+}
+
+#radio-section-education:checked ~ #section-education {
+  flex-grow: 1;
+}
+
+#radio-section-volunteering:checked ~ #section-volunteering {
+  flex-grow: 1;
+}
+
+
 #radio-section-intro:checked ~ #section-intro > div {
   display: block;
   min-height: max-content;
   transition: height 0.5s;
-  height: 81rem;
+}
+
+#radio-section-skills:checked ~ #section-skills > div {
+  display: block;
+  min-height: max-content;
+  transition: height 0.5s;
 }
 
 #radio-section-previous-exp:checked ~ #section-previous-exp > div {
   display: block;
   min-height: max-content;
   transition: height 0.5s;
-  height: 81rem;
 }
 
 #radio-section-education:checked ~ #section-education > div {
   display: block;
   min-height: max-content;
   transition: height 0.5s;
-  height: 81rem;
 }
 
 #radio-section-volunteering:checked ~ #section-volunteering > div {
   display: block;
   min-height: max-content;
   transition: height 0.5s;
-  height: 81rem;
 }
-
-
-body {
-  font-family: 'Libre Franklin', sans-serif;
-  font-size: calc(12px + 1.5rem);
-  overflow-y: auto;
-  margin: unset;
-}
-
 
 @media only screen and (min-width: 1000px) and (min-height: 1100px) {
-  h2 {
-    font-size: 2rem;
-  }
-
   body {
     background-image: url('../img/topography.png');
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    min-width: 1000px;
     width: 80vw;
-    height: 85vh;
     margin-left: auto;
     margin-right: auto;
-    font-size: 1.25rem;
-  }
-
-  #radio-section-intro:checked~#section-intro > div {
-    height: 40vh;
-  }
-
-  #radio-section-previous-exp:checked~#section-previous-exp > div {
-    height: 40vh;
-  }
-
-  #radio-section-education:checked~#section-education > div {
-    height: 40vh;
-  }
-
-  #radio-section-volunteering:checked~#section-volunteering > div {
-    height: 40vh;
   }
 
   #intro {
@@ -103,14 +104,28 @@ body {
   #intro > img {
     order: 2;
   }
-
-  #intro > img {
-    order: 1;
-  }
 }
 
 #section-intro {
   background-color: #fff;
+}
+
+#section-skills {
+  background-color: #25a18e;
+}
+
+#section-previous-exp {
+  background-color: #9fffcb;
+  
+}
+
+#section-education {
+  background-color: #00a5cf;
+}
+
+#section-volunteering {
+  background-color: #004e64;
+  color: #ebf2fa;
 }
 
 #intro > img {
@@ -123,11 +138,6 @@ body {
 
 #intro>div>p>i {
   margin-right: 0.5rem;
-}
-
-#section-previous-exp {
-  background-color: #05668D;
-  color: #ebf2fa;
 }
 
 .carousel-viewport {
@@ -150,14 +160,6 @@ body {
   scroll-snap-align: start;
   width: 100%;
   justify-content: space-between;
-}
-
-#section-education {
-  background-color: #86A91B;
-}
-
-#section-volunteering {
-  background-color: #F5D547;
 }
 
 .carousel-slide > .carousel-nav {
