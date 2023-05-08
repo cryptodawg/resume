@@ -93,7 +93,6 @@ body {
 
 #section-previous-exp {
   background-color: #9fffcb;
-  
 }
 
 #section-education {
@@ -105,30 +104,6 @@ body {
   color: #ebf2fa;
 }
 
-@media only screen and (min-width: 1000px) and (min-height: 1100px) {
-  body {
-    background-image: url('../img/topography.png');
-    min-width: 1000px;
-    width: 80vw;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  #intro {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-  }
-
-  .carousel-slide > .carousel-nav {
-    font-size: 2rem;
-  }
-
-  #intro > img {
-    order: 2;
-  }
-}
-
 #intro > img {
   display: block;
   height: 300px;
@@ -137,8 +112,8 @@ body {
   margin-right: auto;
 }
 
-#intro>div>p>i {
-  margin-right: 0.5rem;
+#socials i {
+  margin-right: 10px;
 }
 
 .carousel-viewport {
@@ -164,7 +139,6 @@ body {
 }
 
 .carousel-slide > .carousel-nav {
-  color: #fff;
   font-size: 5rem;
   outline: 0;
   align-self: center;
@@ -194,10 +168,34 @@ body {
   margin-top: 3rem;
 }
 
-.experience-role>time {
+.experience-role > time {
   opacity: 50%;
 }
 
-.experience-role>ul {
+.experience-role > ul {
   margin-top: 1rem;
+}
+
+@media only screen and (min-width: 1000px) and (min-height: 1100px) {
+  body {
+    background-image: url('../img/topography.png');
+    min-width: 1000px;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #intro {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .carousel-slide > .carousel-nav {
+    font-size: 2rem;
+  }
+
+  #intro > img {
+    order: 2;
+  }
 }
