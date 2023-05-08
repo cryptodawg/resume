@@ -14,7 +14,7 @@ h2 {
 section {
   display: flex;
   flex-direction: column;
-  padding: 2vh;
+  padding: 1vh;
 }
 
 section > div {
@@ -22,6 +22,7 @@ section > div {
 }
 
 body {
+  background-color: #004e64;
   display: flex;
   flex-direction: column;
   font-family: 'Libre Franklin', sans-serif;
@@ -82,6 +83,28 @@ body {
   transition: height 0.5s;
 }
 
+#section-intro {
+  background-color: #fff;
+}
+
+#section-skills {
+  background-color: #25a18e;
+}
+
+#section-previous-exp {
+  background-color: #9fffcb;
+  
+}
+
+#section-education {
+  background-color: #00a5cf;
+}
+
+#section-volunteering {
+  background-color: #004e64;
+  color: #ebf2fa;
+}
+
 @media only screen and (min-width: 1000px) and (min-height: 1100px) {
   body {
     background-image: url('../img/topography.png');
@@ -104,28 +127,6 @@ body {
   #intro > img {
     order: 2;
   }
-}
-
-#section-intro {
-  background-color: #fff;
-}
-
-#section-skills {
-  background-color: #25a18e;
-}
-
-#section-previous-exp {
-  background-color: #9fffcb;
-  
-}
-
-#section-education {
-  background-color: #00a5cf;
-}
-
-#section-volunteering {
-  background-color: #004e64;
-  color: #ebf2fa;
 }
 
 #intro > img {
