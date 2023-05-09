@@ -31,7 +31,7 @@ body {
   overflow-x: hidden;
   margin: unset;
   height: 100vh;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 #radio-section-intro:checked ~ #section-intro {
