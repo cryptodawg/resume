@@ -28,9 +28,10 @@ body {
   flex-direction: column;
   font-family: 'Libre Franklin', sans-serif;
   overflow-y: auto;
+  overflow-x: hidden;
   margin: unset;
   height: 100vh;
-  font-size: 1.25rem;
+  font-size: 2rem;
 }
 
 #radio-section-intro:checked ~ #section-intro {
@@ -105,12 +106,19 @@ body {
   color: #ebf2fa;
 }
 
-#intro > img {
-  display: block;
-  height: 300px;
-  border-radius: 10%;
+
+#section-intro img {
+  display: inline-flex;
+  height: 15rem;
+  border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
+}
+
+#socials {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
 }
 
 #socials i {
@@ -139,10 +147,15 @@ body {
   justify-content: space-between;
 }
 
+.carousel-slide hr {
+  color: black;
+}
+
 .carousel-slide > .carousel-nav {
   font-size: 5rem;
   outline: 0;
   align-self: center;
+  color: black;
 }
 
 .carousel-slide > .next {
@@ -194,9 +207,5 @@ body {
 
   .carousel-slide > .carousel-nav {
     font-size: 2rem;
-  }
-
-  #intro > img {
-    order: 2;
   }
 }
