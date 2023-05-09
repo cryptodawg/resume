@@ -155,7 +155,7 @@ body {
   color: black;
 }
 
-.carousel-slide > .carousel-nav {
+.carousel-nav {
   font-size: 5rem;
   outline: 0;
   align-self: center;
