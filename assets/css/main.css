@@ -31,7 +31,7 @@ body {
   overflow-x: hidden;
   margin: unset;
   height: 100vh;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
 #radio-section-intro:checked ~ #section-intro {
@@ -118,7 +118,6 @@ body {
 #socials {
   display: flex;
   align-items: center;
-  font-size: 2rem;
 }
 
 #socials i {
@@ -204,13 +203,7 @@ body {
     margin-right: auto;
   }
 
-  #intro {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-  }
-
-  .carousel-slide > .carousel-nav {
+  .carousel-nav {
     font-size: 2rem;
   }
 }
