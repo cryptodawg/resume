@@ -109,7 +109,7 @@ body {
 
 #section-intro img {
   display: inline-flex;
-  height: 15rem;
+  height: 20rem;
   border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -123,6 +123,11 @@ body {
 
 #socials i {
   margin-right: 10px;
+}
+
+#socials p {
+  display: flex;
+  align-items: center;
 }
 
 .carousel-viewport {
